@@ -23,6 +23,5 @@ module Myapp
       g.template_engin false
     end
     config.api_only = true
-    config.middleware.use ActionDispatch::Flash
   end
 end
