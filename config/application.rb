@@ -19,8 +19,12 @@ module Myapp
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     config.generators do |g|
+      g.javascripts false
+      g.stylesheets false
       g.helper false
       g.template_engin false
+      g.test_framework false
+      g.test_framework :rspec
     end
     config.api_only = true
   end
